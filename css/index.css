@@ -1,0 +1,43 @@
+:root {
+    font-size: 62.5%;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    height: 100vh;
+    width: 100vw;
+}
+
+/* buttons */
+#buttons {
+    position: absolute;
+    top: 1.2rem;
+    right: 5rem;
+}
+
+#buttons button {
+    padding: 1rem 1.2rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    border: none;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+#buttons button:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+#buttons button:focus,
+#buttons button:target {
+    outline: none;
+}

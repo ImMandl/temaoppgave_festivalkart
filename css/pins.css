@@ -1,0 +1,79 @@
+.tg-marker {
+    background-image: url('../img/tg-pin.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 6rem;
+    height: 7.15rem;  
+    cursor: pointer;
+}
+
+.parking-marker {
+    background-image: url('../img/carpark-pin.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 4rem;
+    height: 5.15rem;  
+    cursor: pointer;
+}
+
+.caravan-marker {
+    background-image: url('../img/caravan-pin.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 4rem;
+    height: 5.15rem;  
+    cursor: pointer;
+}
+
+.sleep-marker {
+    background-image: url('../img/sleep-pin.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 4rem;
+    height: 5.15rem;  
+    cursor: pointer;
+}
+
+.sunday-store-marker {
+    background-image: url('../img/24h-pin.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 4rem;
+    height: 5.15rem;  
+    cursor: pointer;
+}
+
+.pizza-marker {
+    background-image: url('../img/pizza-pin.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 4rem;
+    height: 5.15rem;  
+    cursor: pointer;
+}
+
+.store-marker {
+    background-image: url('../img/store-pin.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 4rem;
+    height: 5.15rem;  
+    cursor: pointer;
+}
+
+.food-marker {
+    background-image: url('../img/food-pin.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 4rem;
+    height: 5.15rem;  
+    cursor: pointer;
+}
