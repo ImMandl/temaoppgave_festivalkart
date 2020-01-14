@@ -2,9 +2,8 @@
     position: absolute;
     top: 1rem;
     right: 5rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
+    display: flex;
+    flex-direction: row;
 }
 
 /* Buttons that changes the look of the map */
@@ -38,6 +37,9 @@
     border-radius: 0.5rem;
     background-color: white;
     font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 #weather-wrapper p {
@@ -54,8 +56,10 @@
 
 #weather-icon {
     height: 4rem;
+    margin-left: .4rem;
 }
 
+/* Puts the celcius icon behind the temperature number */
 #grader {
     display: flex;
     flex-direction: row;
