@@ -13,25 +13,35 @@
     z-index: 1; /* Stay on top */
     top: 0;
     left: 0;
-    background-color: #FFF;
+    background-color: #222;
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 6rem; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
 }
 
+/* scrollbar */
+.sidebar::-webkit-scrollbar {
+    width: .5rem;
+    background-color: #ffa715;
+}
+
+/* scrollbar handle */
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #ea2054;
+  }
+
 /* Style the close button */
 .sidebar a {
-    color: #333;
+    color: #FFF;
     text-decoration: none;
 }
 
-/* Position and style the close button (top right corner) */
+/* Position and style the close button (top right corner of the sidebar) */
 .sidebar .closebtn {
     position: absolute;
-    top: 0;
+    top: .5rem;
     right: 2.5rem;
     font-size: 3.6rem;
-    margin-left: 5rem;
 }
   
 /* The button used to open the sidebar */
@@ -64,15 +74,23 @@
 /* Articles */
 nav article {
     cursor: pointer;
-    padding: 1rem 1.6rem 2rem;
-    border-bottom: .1rem solid #333;
-    color: #333;
-    background-color: rgb(240, 240, 240);
+    padding: 2rem 1.6rem;
+    border-bottom: .1rem solid rgb(240, 240, 240);;
+    color: #FFF;
 }
 
-/* Makes the nth-child have a white background */
-nav article:nth-child(even) {
-    background-color: white;
+nav article:hover {
+    background-color: #333;
+}
+
+/* Article at the top */
+#top-article {
+    padding-top: .2rem;
+}
+
+/* Article at the bottom */
+#bottom-article {
+    margin-bottom: 10rem;
 }
 
 nav article h1 {

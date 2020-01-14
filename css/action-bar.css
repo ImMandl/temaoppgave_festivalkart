@@ -1,0 +1,62 @@
+#action-bar {
+    position: absolute;
+    top: 1rem;
+    right: 5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+/* Buttons that changes the look of the map */
+#buttons {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+#buttons button {
+    padding: 1rem 1.2rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    border: none;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+#buttons button:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+#buttons button:focus,
+#buttons button:target {
+    outline: none;
+}
+
+/* Card that shows the weather */
+#weather-wrapper {
+    padding: 1.4rem 1.2rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    font-size: 1.2rem;
+}
+
+#weather-wrapper p {
+    margin: 0 0 .5rem 0;
+}
+
+#weather-temp {
+    font-weight: 600;
+}
+
+#weather-description {
+    font-weight: 600;
+}
+
+#weather-icon {
+    height: 4rem;
+}
+
+#grader {
+    display: flex;
+    flex-direction: row;
+}

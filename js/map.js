@@ -183,7 +183,7 @@ const storePin = () => {
 
     // lager en popup
     const popupStore2 = new mapboxgl.Popup({ offset: 25 }).setHTML(
-        "<b>Vikasenteret</b><br>Det tar ca 21min å gå hit.<br>VIKASENTERET, 2312 Ottestadr"
+        "<b>Vikasenteret</b><br>Det tar ca 21min å gå hit.<br>Vikavegen 15, 2312 Bekkelaget"
     );
 
 
@@ -192,7 +192,7 @@ const storePin = () => {
     storeMarker2.setPopup(popupStore2);
     storeMarker2.addTo(map);
 
-    // pin 3 (cc mart (store senteret))
+    // pin 3 (cc mat (store senteret))
     const store3 = document.createElement("a");
     store3.className = "store-marker";
 
@@ -243,7 +243,7 @@ const foodPin = () => {
 
     // lager en popup
     const popupFood3 = new mapboxgl.Popup({ offset: 25 }).setHTML(
-        "<b>Kiosk ved inngangen i vikingskipet</b><br>Her kan du få fersk pizza, burgere eller kebab."
+        "<b>Kiosk ved inngangen i vikingskipet</b><br>Her kan du få fersk pizza, burgere eller kebab rett ved inngangen til vikingskipet"
     );
 
     const foodMarker3 = new mapboxgl.Marker(food3);
