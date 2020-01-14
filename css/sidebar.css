@@ -1,0 +1,95 @@
+/* Sidebar wrapper */
+#sidebar-wrapper {
+    position: absolute; /* Puts the sidebar on top of the map */
+    top: 0;
+    left: 0;
+}
+
+/* The sidebar menu */
+.sidebar {
+    height: 100vh; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #FFF;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 6rem; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* Style the close button */
+.sidebar a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 2.5rem;
+    font-size: 3.6rem;
+    margin-left: 5rem;
+}
+  
+/* The button used to open the sidebar */
+.openbtn {
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: #fff;
+    color: #333;
+    padding: 1rem 1.2rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+  
+.openbtn:hover {
+    background-color: rgb(240, 240, 240);
+}
+  
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 2rem;
+}
+  
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 45rem) {
+    .sidebar {padding-top: 1.5rem;}
+    .sidebar a {font-size: 1.8rem;}
+}
+
+/* Articles */
+nav article {
+    cursor: pointer;
+    padding: 1rem 1.6rem 2rem;
+    border-bottom: .1rem solid #333;
+    color: #333;
+    background-color: rgb(240, 240, 240);
+}
+
+/* Makes the nth-child have a white background */
+nav article:nth-child(even) {
+    background-color: white;
+}
+
+nav article h1 {
+    font-size: 1.6rem;
+    margin-bottom: .8rem;
+    pointer-events: none;
+}
+
+nav article p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    pointer-events: none;
+}
+
+/* style for the imags in the sidebar */
+nav article img {
+    width: 22rem;
+    margin-bottom: .5rem;
+    pointer-events: none;
+}

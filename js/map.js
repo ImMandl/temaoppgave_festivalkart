@@ -7,7 +7,7 @@ var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/immandel/ck53shyjx05we1cpsmmdc2l0y',
     zoom: 15,
-    minZoom: 15,
+    minZoom: 12,
     center: [11.091831, 60.791730]
 });
 
@@ -250,6 +250,20 @@ const foodPin = () => {
     foodMarker3.setLngLat([11.101406, 60.793560]);
     foodMarker3.setPopup(popupFood3);
     foodMarker3.addTo(map);
+
+    // pin 4 (McDonalds)
+    const food4 = document.createElement("a");
+    food4.className = "food-marker";
+
+    // lager en popup
+    const popupFood4 = new mapboxgl.Popup({ offset: 25 }).setHTML(
+        "<b>McDonalds</b><br>Det tar ca 27min å gå hit.<br>Torggata 81/83, 2317 Hamar"
+    );
+
+    const foodMarker4 = new mapboxgl.Marker(food4);
+    foodMarker4.setLngLat([11.068404, 60.795305]);
+    foodMarker4.setPopup(popupFood4);
+    foodMarker4.addTo(map);
 }
 
 

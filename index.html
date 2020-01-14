@@ -12,7 +12,10 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/buttons.css">
     <link rel="stylesheet" href="./css/pins.css">
+    <link rel="stylesheet" href="./css/weather.css">
+    <link rel="stylesheet" href="./css/sidebar.css">
 
     <!-- Mapbox -->
     <script src='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
@@ -24,14 +27,69 @@
 </head>
 
 <body>
+    <!-- Div that show the map -->
     <div id="map"></div>
 
-    <div id="buttons">
+
+    <!-- Sidebar -->
+    <nav id="nav">
+        <div id="sidebar-wrapper">
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <article data-lng="11.100961" data-lat="60.793035">
+                    <img src="./img/vikingskipet.jfif" alt="bildet av vikingskipet">
+                    <h1>Vikingskipet - The Gathering</h1>
+                    <p>Det er her lanet foregår, fem uforglemmelige dager i Norges feteste påskehytte</p>
+                </article>
+                <article data-lng="11.097720" data-lat="60.790868">
+                    <img src="./img/parkering-vikingskipet.jfif" alt="parkeringen ved vikingskipet">
+                    <h1>Parkering</h1>
+                    <p>Parkering ved Vikingskipet</p>
+                </article>
+                <article data-lng="11.097533" data-lat="60.793599">
+                    <h1>Hamar trafikkstasjon</h1>
+                    <p>Hvis du ikke finner parkering ved Vikingskipet er det mulig å parkere ved Hamar trafikkstasjon.
+                        Den er plassert rett på andre siden av veien fra Vikingskipet. </p>
+                </article>
+            </div>
+
+            <div id="main">
+                <button class="openbtn" onclick="openNav()">&#9776;</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- A card that show the weather -->
+    <article id="weather-wrapper">
+        <div>
+            <div id="grader">
+                <!-- Degrees -->
+                <p id="weather-temp"></p>
+                <b>
+                    <!-- Celcius icon -->
+                    <p">&#8451</p>
+                </b>
+            </div>
+            <!-- Description of the weather -->
+            <p id="weather-description"></p>
+
+        </div>
+        <!-- Weather icon -->
+        <img id="weather-icon" alt="Weather icon">
+    </article>
+
+
+    <!-- Buttons for different types of maps -->
+    <article id="buttons">
         <button data-stil="immandel/ck53shyjx05we1cpsmmdc2l0y"><b>Street map</b></button>
         <button data-stil="mapbox/satellite-streets-v11"><b>Satellite</b></button>
-    </div>
+    </article>
 
-    <script src="./js/index.js"></script>
+
+    <!-- Javascript -->
+    <script src="./js/map.js"></script> <!-- The map and sidebar information -->
+    <script src="./js/weather.js"></script> <!-- Weather card -->
+    <script src="./js/sidebar.js"></script> <!-- Sidebar opener -->
 </body>
 
 </html>

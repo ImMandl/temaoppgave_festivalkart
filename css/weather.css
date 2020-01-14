@@ -1,0 +1,30 @@
+#weather-wrapper {
+    position: absolute;
+    top: 6rem;
+    right: 5rem;
+    padding: 1.4rem 1.2rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    font-size: 1.2rem;
+}
+
+#weather-wrapper p {
+    margin: 0 0 .5rem 0;
+}
+
+#weather-temp {
+    font-weight: 600;
+}
+
+#weather-description {
+    font-weight: 600;
+}
+
+#weather-icon {
+    height: 4rem;
+}
+
+#grader {
+    display: flex;
+    flex-direction: row;
+}
