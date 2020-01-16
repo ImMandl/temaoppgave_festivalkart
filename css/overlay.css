@@ -1,8 +1,9 @@
+/* the overlay */
 #overlay {
     position: fixed;
     display: none;
-    width: 90vw;
-    height: 85vh;
+    width: 100vw;
+    height: 100vh;
     top: 0;
     left: 0;
     right: 0;
@@ -10,29 +11,29 @@
     background-color: rgba(255, 255, 255, 1);
     z-index: 2;
     cursor: pointer;
-    border-radius: 8px;
-    border: 2px solid #ea2054;
-    margin: auto auto;
 }
   
+/* chart container */
 #container{
     height: 50rem;
     margin: 5rem 2rem 1rem 1rem;
 }
 
+/* opens the overlay */
 #overlay-btn {
     position: absolute;
     bottom: 3rem;
     right: 1rem;
 }
 
+/* closes the overlay */
 #overlay-close-btn{
-    font-size: 3.6rem;
     position: absolute;
-    top: 0;
-    right: 0;
+    bottom: 3rem;
+    right: 1rem;
 }
 
+/* changes stats on the overlay */
 #statistikk-btns {
     display: grid;
     grid-auto-flow: row;
