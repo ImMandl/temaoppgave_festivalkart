@@ -45,10 +45,19 @@
     border: 2px solid rgb(240, 240, 240);
 }
 
+/* for mobile */
 @media only screen and (max-width: 619px) { 
     #overlay-btn {
         bottom: 1rem;
     }  
+}
+
+
+@media only screen and (max-width: 619px) { 
+    #container{
+        height: 60rem;
+        margin: 2rem .2rem;
+    }
 }
 
 /* Highchart styling */
@@ -99,11 +108,4 @@
     font-size: 1.4rem;
     letter-spacing: .1rem;
     font-weight: 600;
-}
-
-@media only screen and (max-width: 619px) { 
-    #container{
-        height: 40rem;
-        margin: 2rem .2rem;
-    }
 }
