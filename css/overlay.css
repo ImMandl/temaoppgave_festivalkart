@@ -1,0 +1,101 @@
+#overlay {
+    position: fixed;
+    display: none;
+    width: 90vw;
+    height: 85vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 1);
+    z-index: 2;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 2px solid #ea2054;
+    margin: auto auto;
+}
+  
+#container{
+    height: 500px;
+    margin: 5rem 2rem 1rem 1rem;
+}
+
+#overlay-btn {
+    position: absolute;
+    bottom: 3rem;
+    right: 1rem;
+}
+
+#overlay-close-btn{
+    font-size: 3.6rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#statistikk-btns {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 1rem;
+    justify-items: center;
+}
+
+#statistikk-btns button {
+    border: 2px solid rgb(240, 240, 240);
+}
+
+@media only screen and (max-width: 619px) { 
+    #overlay-btn {
+        bottom: 1rem;
+    }  
+}
+
+/* Highchart styling */
+
+.highcharts-background {
+    fill: #fff;
+}
+
+.highcharts-plot-border {
+    fill: #fff;
+}
+
+.highcharts-color-0 {
+    fill: #ea2054;
+}
+
+.highcharts-color-0:hover {
+    fill: #bb123c;
+}
+
+.highcharts-legend {
+    fill: #fff;
+}
+
+.highcharts-axis.highcharts-color-0 .highcharts-axis-line {
+    stroke: #ea2054;
+}
+  
+.highcharts-axis.highcharts-color-0 text {
+    fill: #ea2054;
+}
+
+.highcharts-grid-line {
+    stroke: #ea2054;;
+}
+
+.highcharts-data-table tr:hover {
+    background: #fff;
+}
+
+.highcharts-title {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.highcharts-axis-title {
+    font-size: 1.4rem;
+    letter-spacing: .1rem;
+    font-weight: 600;
+}

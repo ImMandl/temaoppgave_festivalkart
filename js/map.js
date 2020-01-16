@@ -20,15 +20,15 @@ buttons.onclick = (evt) => {
 // Add zoom and rotation controls to the map.
 map.addControl(new mapboxgl.NavigationControl());
 
-
 // TG pin
 const tgPin = (e) => {
     const tg = document.createElement("a");
     tg.className = "tg-marker";
 
     // lager en popup
-    const tgPopup = new mapboxgl.Popup({ offset: 25 }).setHTML(
-        "<b>Vikingskipet</b>"
+    const tgPopup = new mapboxgl.Popup({ closeButton: false, offset: 25 }).setHTML(`
+        <b>Vikingskipet</b>
+        `
     );
 
     const tgMarker = new mapboxgl.Marker(tg);
@@ -45,7 +45,7 @@ const parkPin = () => {
     park.className = "parking-marker";
 
     // lager en popup
-    const popupParkering = new mapboxgl.Popup({ offset: 25 }).setHTML(
+    const popupParkering = new mapboxgl.Popup({ closeButton: false, offset: 25 }).setHTML(
         '<b>Hovedparkering</b>'
     );
 
@@ -59,7 +59,7 @@ const parkPin = () => {
     park2.className = "parking-marker";
 
     // lager en popup
-    const popupParkering2 = new mapboxgl.Popup({ offset: 25 }).setHTML(
+    const popupParkering2 = new mapboxgl.Popup({ closeButton: false, offset: 25 }).setHTML(
         '<b>Parkering hos Hamar trafikkstasjon</b>'
     );
 
@@ -73,7 +73,7 @@ const parkPin = () => {
     caravan.className = "caravan-marker";
 
     // lager en popup
-    const popupCaravan = new mapboxgl.Popup({ offset: 25 }).setHTML(
+    const popupCaravan = new mapboxgl.Popup({ closeButton: false, offset: 25 }).setHTML(
         '<b>Parkering for campingbiler og hengere</b>'
     );
 
@@ -90,7 +90,7 @@ const sleepPin = () => {
     sleep.className = "sleep-marker";
 
     // lager en popup
-    const popupSleep = new mapboxgl.Popup({ offset: 25 }).setHTML(
+    const popupSleep = new mapboxgl.Popup({ closeButton: false, offset: 25 }).setHTML(
         '<b>Soveplass hos Daniel</b>'
     );
 
@@ -104,7 +104,7 @@ const sleepPin = () => {
     sleep2.className = "sleep-marker";
 
     // lager en popup
-    const popupSleep2 = new mapboxgl.Popup({ offset: 25 }).setHTML(
+    const popupSleep2 = new mapboxgl.Popup({ closeButton: false, offset: 25 }).setHTML(
         '<b>Sovetelt på tg</b>'
     );
 
@@ -120,7 +120,7 @@ const sundayStorePin = () => {
     sundayStore.className = "sunday-store-marker";
 
     // lager en popup
-    const popupSundayStore = new mapboxgl.Popup({ offset: 25 }).setHTML(
+    const popupSundayStore = new mapboxgl.Popup({ closeButton: false, offset: 25 }).setHTML(
         '<b>Joker Skolegata</b><br>Matbutikk som er åpen under hele påsken.<br>Skolegata 51, 2318 Hamar'
     );
 
@@ -137,7 +137,7 @@ const pizzaPin = () => {
     pizza.className = "pizza-marker";
 
     // lager en popup
-    const popupPizza = new mapboxgl.Popup({ offset: 25 }).setHTML(
+    const popupPizza = new mapboxgl.Popup({ closeButton: false, offset: 25 }).setHTML(
         '<b>Pizzabakeren Stangevegen</b><br>Du kan gå hit på 13min eller ringe og få det levert til vikingskipet.<br>Stangevegen 72, 2321 Hamar'
     );
 
@@ -151,7 +151,7 @@ const pizzaPin = () => {
     pizza2.className = "pizza-marker";
 
     // lager en popup
-    const popupPizza2 = new mapboxgl.Popup({ offset: 25 }).setHTML(
+    const popupPizza2 = new mapboxgl.Popup({ closeButton: false, offset: 25 }).setHTML(
         '<b>Peppes Pizza</b><br>Du kan gå hit på 22min eller ringe og då det levert til vikingskipet.<br>Østre Torg, 2301 Hamar'
     );
 
@@ -168,7 +168,7 @@ const storePin = () => {
     store.className = "store-marker";
 
     // lager en popup
-    const popupStore = new mapboxgl.Popup({ offset: 25 }).setHTML(
+    const popupStore = new mapboxgl.Popup({ closeButton: false, offset: 25 }).setHTML(
         "<b>KIWI CC Mart'n Hamar</b><br>Det tar ca 11min å gå hit.<br>Ringgata 53, 2318 Hamar"
     );
 
@@ -182,7 +182,7 @@ const storePin = () => {
     store2.className = "store-marker";
 
     // lager en popup
-    const popupStore2 = new mapboxgl.Popup({ offset: 25 }).setHTML(
+    const popupStore2 = new mapboxgl.Popup({ closeButton: false, offset: 25 }).setHTML(
         "<b>Vikasenteret</b><br>Det tar ca 21min å gå hit.<br>Vikavegen 15, 2312 Bekkelaget"
     );
 
@@ -197,7 +197,7 @@ const storePin = () => {
     store3.className = "store-marker";
 
     // lager en popup
-    const popupStore3 = new mapboxgl.Popup({ offset: 25 }).setHTML(
+    const popupStore3 = new mapboxgl.Popup({ closeButton: false, offset: 25 }).setHTML(
         "<b>CC Mat Hamar</b><br>Det tar ca 20min å gå hit.<br>Vangsvegen 62, 2317 Hamar"
     );
 
@@ -214,7 +214,7 @@ const foodPin = () => {
     food.className = "food-marker";
 
     // lager en popup
-    const popupFood = new mapboxgl.Popup({ offset: 25 }).setHTML(
+    const popupFood = new mapboxgl.Popup({ closeButton: false, offset: 25 }).setHTML(
         "<b>Torggata</b><br>Det tar ca 22min å gå hit. Her har du et stort utvalg av forskjellige spisesteder. Lunchbar, indisk, kebab, asiatisk, pizza og mer."
     );
 
@@ -228,7 +228,7 @@ const foodPin = () => {
     food2.className = "food-marker";
 
     // lager en popup
-    const popupFood2 = new mapboxgl.Popup({ offset: 25 }).setHTML(
+    const popupFood2 = new mapboxgl.Popup({ closeButton: false, offset: 25 }).setHTML(
         "<b>Kantina i vikingskipet</b><br>Her serveres pølser, pommes frites, burgere, baguetter og smørbrød i tillegg til forskjellig drikke<br>Det er også her du kan få brukt matbilletten din til frokokst, lunsj og middag."
     );
 
@@ -242,7 +242,7 @@ const foodPin = () => {
     food3.className = "food-marker";
 
     // lager en popup
-    const popupFood3 = new mapboxgl.Popup({ offset: 25 }).setHTML(
+    const popupFood3 = new mapboxgl.Popup({ closeButton: false, offset: 25 }).setHTML(
         "<b>Kiosk ved inngangen i vikingskipet</b><br>Her kan du få fersk pizza, burgere eller kebab rett ved inngangen til vikingskipet"
     );
 
@@ -256,7 +256,7 @@ const foodPin = () => {
     food4.className = "food-marker";
 
     // lager en popup
-    const popupFood4 = new mapboxgl.Popup({ offset: 25 }).setHTML(
+    const popupFood4 = new mapboxgl.Popup({ closeButton: false, offset: 25 }).setHTML(
         "<b>McDonalds</b><br>Det tar ca 27min å gå hit.<br>Torggata 81/83, 2317 Hamar"
     );
 

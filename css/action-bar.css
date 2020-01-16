@@ -1,7 +1,7 @@
 #action-bar {
     position: absolute;
     top: 1rem;
-    right: 5rem;
+    right: 6rem;
     display: flex;
     flex-direction: row;
 }
@@ -11,24 +11,7 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
-}
-
-#buttons button {
-    padding: 1rem 1.2rem;
-    border-radius: 0.5rem;
-    background-color: white;
-    border: none;
     margin-left: 1rem;
-    cursor: pointer;
-}
-
-#buttons button:hover {
-    background-color: rgb(240, 240, 240);
-}
-
-#buttons button:focus,
-#buttons button:target {
-    outline: none;
 }
 
 /* Card that shows the weather */
@@ -46,14 +29,6 @@
     margin: 0 0 .5rem 0;
 }
 
-#weather-temp {
-    font-weight: 600;
-}
-
-#weather-description {
-    font-weight: 600;
-}
-
 #weather-icon {
     height: 4rem;
     margin-left: .4rem;
@@ -63,4 +38,23 @@
 #grader {
     display: flex;
     flex-direction: row;
+}
+
+@media only screen and (max-width: 619px) {
+    #action-bar {
+        position: initial;
+    }
+
+    #buttons {
+        position: absolute;
+        top: 1rem;
+        right: 5rem;
+    }
+    
+    #weather-wrapper {
+        display: block;
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+    }
 }

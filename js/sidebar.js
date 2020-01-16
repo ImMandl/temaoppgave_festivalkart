@@ -3,8 +3,8 @@ const nav = document.querySelector("#nav");
 
 // Set the width of the sidebar to 250px and the left margin of the page content to 250px 
 const openNav = () => {
-    document.querySelector("#mySidebar").style.width = "25rem";
-    document.querySelector("#main").style.marginLeft = "25rem";
+    document.querySelector("#mySidebar").style.width = "32rem";
+    document.querySelector("#main").style.marginLeft = "32rem";
 }
 
 // Set the width of the sidebar to 0 and the left margin of the page content to 0 

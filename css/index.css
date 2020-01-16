@@ -17,3 +17,25 @@ body, html, * {
     width: 100vw;
 }
 
+button:focus,
+button:target {
+    outline: none;
+}
+
+button {
+    padding: 1rem 1.2rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+p, 
+a, 
+button {
+    font-weight: 600;
+}
