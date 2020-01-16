@@ -16,7 +16,7 @@
 }
   
 #container{
-    height: 500px;
+    height: 50rem;
     margin: 5rem 2rem 1rem 1rem;
 }
 
@@ -98,4 +98,11 @@
     font-size: 1.4rem;
     letter-spacing: .1rem;
     font-weight: 600;
+}
+
+@media only screen and (max-width: 619px) { 
+    #container{
+        height: 40rem;
+        margin: 2rem .2rem;
+    }
 }
