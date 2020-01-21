@@ -80,14 +80,9 @@
     padding: 1rem;
 }
   
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-width: 61rem) {
     #sidebar-action {
         height: 3rem;
-    }
-    
-    .closebtn {
-        padding: 0.4rem 1.2rem;
     }
 }
 
