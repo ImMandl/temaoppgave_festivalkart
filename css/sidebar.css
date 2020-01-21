@@ -90,6 +90,11 @@
     #sidebar-action {
         height: 3rem;
     }
+
+    #sidebar-action .closebtn {
+        position: static;
+        font-size: 3rem;
+    }
 }
 
 /* Articles */
