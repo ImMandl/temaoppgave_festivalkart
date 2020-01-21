@@ -40,6 +40,12 @@
     position: relative;
 }
 
+#sidebar-action h3 {
+    color: #FFF;
+    font-size: 2rem;
+    width: 20rem;
+}
+
 /* Position and style the close button (top right corner of the sidebar) */
 .closebtn {
     font-size: 3.6rem; /* Increases the size of the icon */
