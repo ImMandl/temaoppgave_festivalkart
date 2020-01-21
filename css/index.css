@@ -39,3 +39,12 @@ a,
 button {
     font-weight: 600;
 }
+
+ul,
+ul li,
+ul ul li {
+   margin:0;
+   padding: 0;
+   text-indent: 0;
+   list-style-type: none;
+}

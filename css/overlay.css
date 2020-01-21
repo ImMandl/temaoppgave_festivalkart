@@ -45,20 +45,17 @@
     border: 2px solid rgb(240, 240, 240);
 }
 
-/* for mobile */
 @media only screen and (max-width: 619px) { 
     #overlay-btn {
         bottom: 1rem;
     }  
-}
-
-
-@media only screen and (max-width: 619px) { 
     #container{
-        height: 60rem;
-        margin: 2rem .2rem;
+        height: 45rem;
+        margin: 2rem .2rem 1rem;
     }
+    
 }
+
 
 /* Highchart styling */
 

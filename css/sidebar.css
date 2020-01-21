@@ -15,7 +15,7 @@
     left: 0;
     background-color: #222;
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 6rem; /* Place content 60px from the top */
+    padding-top: 1rem;
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
 }
 
@@ -28,23 +28,31 @@
 /* scrollbar handle */
 .sidebar::-webkit-scrollbar-thumb {
     background-color: #ea2054;
-  }
+}
 
-/* Style the close button */
-.sidebar a {
-    color: #FFF;
-    text-decoration: none;
+#sidebar-action {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    padding: 0 0 0 1.6rem; /* Makes padding on the left equal to articles */
+    position: relative;
 }
 
 /* Position and style the close button (top right corner of the sidebar) */
 .closebtn {
-    position: absolute;
-    top: .5rem;
-    right: 2.5rem;
-    font-size: 3.6rem;
+    font-size: 3.6rem; /* Increases the size of the icon */
     padding: 0.4rem 1.2rem;
-    border-radius: 0.5rem;
+    margin-right: 5rem; /* Makes the close button not go outside the sidebar*/
+    border-radius: .8rem;
     border: none;
+    color: #FFF;
+    text-decoration: none;
+    justify-self: end; /* Aligns the close button to the right */
+    position: fixed; /* Stay in place */
+    top: 1rem;
+    background-color: rgb(42, 42, 42);
 }
 
 .closebtn:hover {
@@ -73,47 +81,52 @@
 }
   
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 45rem) {
-    .sidebar {padding-top: 1.5rem;}
-    .sidebar a {font-size: 1.8rem;}
+@media screen and (max-width: 61.9rem) {
+    .sidebar {
+        padding-top: 1.5rem;
+    
+    }
+    .sidebar a {
+        font-size: 1.8rem;
+    }
 }
 
 /* Articles */
-nav article {
+nav li {
     cursor: pointer;
     padding: 2rem 1.6rem;
     border-bottom: .1rem solid rgb(240, 240, 240);;
     color: #FFF;
 }
 
-nav article:hover {
+nav li:hover {
     background-color: #333;
 }
 
 /* Article at the top */
 #top-article {
-    padding-top: .2rem;
+    margin-top: 2rem;
 }
 
 /* Article at the bottom */
 #bottom-article {
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 }
 
-nav article h1 {
+nav li h1 {
     font-size: 1.6rem;
     margin-bottom: .8rem;
     pointer-events: none;
 }
 
-nav article p {
+nav li p {
     font-size: 1.4rem;
     line-height: 2rem;
     pointer-events: none;
 }
 
 /* style for the imags in the sidebar */
-nav article img {
+nav li img {
     height: 14rem;
     width: 28rem;
     object-fit: cover;
