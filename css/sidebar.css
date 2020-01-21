@@ -92,7 +92,7 @@
     }
 
     #sidebar-action .closebtn {
-        position: static;
+        position: fixed;
         font-size: 3rem;
     }
 }
