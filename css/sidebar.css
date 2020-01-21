@@ -90,6 +90,10 @@
     #sidebar-action {
         height: 3rem;
     }
+
+    #sidebar-action .closebtn {
+        position: relative;
+    }
 }
 
 /* Articles */
