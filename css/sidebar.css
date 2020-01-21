@@ -91,7 +91,7 @@
         height: 3rem;
     }
 
-    #sidebar-action .closebtn {
+    .closebtn {
         position: fixed;
         font-size: 3rem;
     }
