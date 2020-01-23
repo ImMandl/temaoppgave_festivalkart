@@ -47,16 +47,12 @@
 
 @media only screen and (max-width: 619px) { 
     #sidebar-action {
-        position: fixed;
     }
 
     #overlay-close-btn {
-        bottom: 1rem;
     }  
 
     #container{
-        height: 45rem;
-        margin: 2rem .2rem 1rem;
     }
     
 }
