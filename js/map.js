@@ -152,7 +152,7 @@ const pizzaPin = () => {
 
     // lager en popup
     const popupPizza2 = new mapboxgl.Popup({ closeButton: false, offset: 25 }).setHTML(
-        '<b>Peppes Pizza</b><br>Du kan gå hit på 22min eller ringe og då det levert til vikingskipet.<br>Østre Torg, 2301 Hamar'
+        '<b>Peppes Pizza</b><br>Du kan gå hit på 22min eller ringe og få det levert til vikingskipet.<br>Østre Torg, 2301 Hamar'
     );
 
     const pizzaMarker2 = new mapboxgl.Marker(pizza2);

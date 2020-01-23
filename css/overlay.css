@@ -46,9 +46,14 @@
 }
 
 @media only screen and (max-width: 619px) { 
-    #overlay-btn {
+    #sidebar-action {
+        position: fixed;
+    }
+
+    #overlay-close-btn {
         bottom: 1rem;
     }  
+
     #container{
         height: 45rem;
         margin: 2rem .2rem 1rem;
@@ -58,51 +63,53 @@
 
 
 /* Highchart styling */
-
+/* background color (around the bars) */
 .highcharts-background {
     fill: #fff;
 }
 
+/* background color (behind the bars) */
 .highcharts-plot-border {
     fill: #fff;
 }
 
+/* colors of the bars */
 .highcharts-color-0 {
     fill: #ea2054;
 }
 
+/* changes the color on the bars when hovering*/
 .highcharts-color-0:hover {
     fill: #bb123c;
 }
 
-.highcharts-legend {
-    fill: #fff;
-}
-
-.highcharts-axis.highcharts-color-0 .highcharts-axis-line {
-    stroke: #ea2054;
-}
-  
+/* title on the left */
 .highcharts-axis.highcharts-color-0 text {
     fill: #ea2054;
-}
-
-.highcharts-grid-line {
-    stroke: #ea2054;;
-}
-
-.highcharts-data-table tr:hover {
-    background: #fff;
-}
-
-.highcharts-title {
-    font-size: 2rem;
-    font-weight: 600;
-    text-align: center;
 }
 
 .highcharts-axis-title {
     font-size: 1.4rem;
     letter-spacing: .1rem;
     font-weight: 600;
+}
+
+.highcharts-tooltip > * {
+    stroke: white;
+}
+
+/* colors of the lines in the background */
+.highcharts-grid-line {
+    stroke:#bb123c;
+}
+
+/* title under */
+.highcharts-legend {
+    fill: #fff;
+}
+
+.highcharts-title {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
 }

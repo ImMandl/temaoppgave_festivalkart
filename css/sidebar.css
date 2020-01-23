@@ -86,6 +86,7 @@
     padding: 1rem;
 }
   
+/* page changes on screens smaller than 60rem(600px) */
 @media only screen and (max-width: 60rem) {
     #sidebar-action {
         height: 3rem;
