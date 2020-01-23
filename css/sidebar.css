@@ -93,8 +93,9 @@
     }
 
     .closebtn {
-        position: fixed;
+        position: absolute;
         font-size: 3rem;
+        top: .5rem;
     }
 }
 
