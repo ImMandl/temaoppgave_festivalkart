@@ -74,6 +74,10 @@
     #sidebar-action {
         height: 3rem;
     }
+
+    #sidebar-action h3 {
+        display: none;
+    }
 }
 
 /* Articles */
