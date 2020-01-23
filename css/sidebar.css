@@ -46,25 +46,6 @@
     width: 20rem;
 }
 
-/* Position and style the close button (top right corner of the sidebar) */
-.closebtn {
-    font-size: 2.2rem; /* Increases the size of the icon */
-    padding: .8rem 1.2rem;
-    margin-right: 5rem; /* Makes the close button not go outside the sidebar*/
-    border-radius: .8rem;
-    border: none;
-    color: #FFF;
-    text-decoration: none;
-    justify-self: end; /* Aligns the close button to the right */
-    position: fixed; /* Stay in place */
-    top: 1rem;
-    background-color: rgb(42, 42, 42);
-}
-
-.closebtn:hover {
-    background-color: rgb(52, 52, 52);
-}
-  
 /* The button used to open the sidebar */
 .openbtn {
     font-size: 2rem;
@@ -74,6 +55,10 @@
     padding: 1rem 1.2rem;
     border-radius: 0.5rem;
     border: none;
+    z-index: 10;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
 }
   
 .openbtn:hover {
@@ -90,12 +75,6 @@
 @media only screen and (max-width: 60rem) {
     #sidebar-action {
         height: 3rem;
-    }
-
-    .closebtn {
-        position: absolute;
-        font-size: 3rem;
-        top: 5rem;
     }
 }
 
