@@ -20,15 +20,22 @@
 }
 
 /* scrollbar */
-.sidebar::-webkit-scrollbar {
+#sidebar-wrapper .sidebar::-webkit-scrollbar {
     width: .5rem;
     background-color: #ffa715;
 }
 
 /* scrollbar handle */
-.sidebar::-webkit-scrollbar-thumb {
+#sidebar-wrapper .sidebar::-webkit-scrollbar-thumb {
     background-color: #ea2054;
 }
+
+/* Firefox scrollbar */
+#sidebar-wrapper .sidebar  {
+    overflow-y: scroll;
+    scrollbar-color: #ffa715 #ea2054;
+    scrollbar-width: thin;
+  }
 
 #sidebar-action {
     width: 100%;
@@ -53,7 +60,7 @@
     padding: 1rem 1.2rem;
     border-radius: 0.5rem;
     border: none;
-    z-index: 10;
+    z-index: 10; /* buttons always on top*/
     position: absolute;
     top: 1rem;
     left: 1rem;
@@ -63,12 +70,6 @@
     background-color: rgb(240, 240, 240);
 }
   
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-    transition: margin-left .5s; /* If you want a transition effect */
-    padding: 1rem;
-}
-  
 /* page changes on screens smaller than 60rem(600px) */
 @media only screen and (max-width: 619px) {
     #sidebar-action {
@@ -76,7 +77,6 @@
     }
 
     #sidebar-action h3 {
-        margin-left: 10rem;
     }
 }
 
