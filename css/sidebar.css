@@ -31,9 +31,6 @@
 }
 
 #sidebar-action {
-    display: grid;
-    grid-auto-flow: column;
-    align-items: center;
     width: 100%;
     height: 5rem;
     padding: 0 0 0 1.6rem; /* Makes padding on the left equal to articles */
@@ -76,10 +73,6 @@
 @media only screen and (max-width: 60rem) {
     #sidebar-action {
         height: 3rem;
-    }
-
-    #sidebar-action h3 {
-        margin-left: 10rem;
     }
 }
 
