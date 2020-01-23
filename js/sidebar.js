@@ -1,10 +1,10 @@
 // Opens and closes the sidebar
 const toggleNav = () => {
-    const element = document.querySelector("#mySidebar");
-    if (element.style.width == "32rem") {
-        element.style.width = "0px";
+    const mySidebar = document.querySelector("#mySidebar");
+    if (mySidebar.style.width == "32rem") {
+        mySidebar.style.width = "0px";
     } else {
-        element.style.width = "32rem";
+        mySidebar.style.width = "32rem";
     }
 }
 
