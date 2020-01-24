@@ -27,7 +27,7 @@
 </head>
 
 <body>
-    <!-- Div that show the map -->
+    <!-- Div that shows the map -->
     <div id="map"></div>
 
 
@@ -50,8 +50,7 @@
                         <img src="./img/parkering-vikingskipet.jfif" alt="parkeringen ved vikingskipet">
                         <h1>Hovedparkering</h1>
                         <p>Parkering ved Vikingskipet. Bakerst på parkeringen er det gjort plass for campingbiler/vogner
-                            og
-                            hengere.</p>
+                            og hengere.</p>
                     </li>
                     <!-- Hamar trafikkstasjon -->
                     <li data-lng="11.097533" data-lat="60.793599">
@@ -97,7 +96,7 @@
                         <img src="./img/peppes-pizza.jpg" alt="Inngangen til peppes pizza">
                         <h1>Peppes pizza</h1>
                         <p>Du kan gå hit på 22min eller ringe og få det levert til
-                            vikingskipet. >Østre Torg, 2301 Hamar</p>
+                            vikingskipet. Østre Torg, 2301 Hamar</p>
                     </li>
                     <!-- kiwi CC Mart'n -->
                     <li data-lng="11.089260" data-lat="60.796022">
@@ -152,6 +151,7 @@
                 </ul>
             </div>
 
+            <!-- Button that opens the sidebar with articles -->
             <div id="main">
                 <button class="openbtn" onclick="toggleNav()">&#9776;</button>
             </div>
@@ -187,7 +187,6 @@
 
     <!-- Overlay -->
     <article id="overlay">
-        <button id="overlay-close-btn" onclick="off()">&times; Se kart</button>
         <div id="container"></div>
         <div id="statistikk-btns">
             <button id="deltager-btn">Se antall deltagere</button>
@@ -195,9 +194,9 @@
         </div>
     </article>
 
-    <!-- Turn on overlay -->
+    <!-- Turn on/off overlay -->
     <div id="overlay-btn">
-        <button onclick="on()">Se Statistikk</button>
+        <button class="overlay-btn" onclick="toggleOverlay()">Se Statistikk</button>
     </div>
 
 
@@ -207,16 +206,7 @@
     <script src="./js/sidebar.js"></script> <!-- Sidebar opener -->
     <script src="https://code.highcharts.com/highcharts.js"></script> <!-- Highchart -->
     <script src="./js/timeline.js"></script> <!-- My chart -->
-    <!-- Turns on overlay -->
-    <script>
-        const on = () => {
-            const overlay = document.querySelector("#overlay").style.display = "block";
-        }
-
-        const off = () => {
-            const overlay = document.querySelector("#overlay").style.display = "none";
-        }
-    </script>
+    <script src="./js/overlay.js"></script> <!-- Turns on overlay -->
 </body>
 
 </html>

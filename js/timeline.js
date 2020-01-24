@@ -39,7 +39,7 @@ const chart = new Highcharts.Chart(options)
 const internett = document.querySelector("#internett-btn");
 const deltager = document.querySelector("#deltager-btn");
 
-// endrer til internett statistikk
+// Changes statistics to internet statistics
 internett.onclick = () => {
     chart.title.update(
         { text: 'Internett hastighet gjennom årene' }
@@ -61,7 +61,7 @@ internett.onclick = () => {
     )
 }
 
-// endrer til deltager statistikk
+// Changes statistics to participants statistics
 deltager.onclick = () => {
     chart.title.update(
         { text: 'Antall deltagere på TG gjennom årene' }
