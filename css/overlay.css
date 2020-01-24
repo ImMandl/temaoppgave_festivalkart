@@ -27,13 +27,6 @@
     z-index: 100; /* always puts the button on top */
 }
 
-/* closes the overlay */
-#overlay-close-btn{
-    position: absolute;
-    bottom: 3rem;
-    right: 1rem;
-}
-
 /* changes stats on the overlay */
 #statistikk-btns {
     display: grid;
