@@ -1,7 +1,6 @@
 /* the overlay */
 #overlay {
     position: fixed;
-    display: none;
     width: 100vw;
     height: 100vh;
     top: 0;
@@ -88,11 +87,6 @@
     stroke: white;
 }
 
-/* colors of the lines in the background */
-.highcharts-grid-line {
-    stroke:#bb123c;
-}
-
 /* title under */
 .highcharts-legend {
     fill: #fff;
@@ -102,4 +96,9 @@
     font-size: 2rem;
     font-weight: 600;
     text-align: center;
+}
+
+/* colors of the lines in the background */
+.highcharts-grid-line {
+    stroke:#bb123c;
 }
