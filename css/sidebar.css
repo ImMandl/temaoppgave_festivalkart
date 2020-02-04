@@ -7,7 +7,7 @@
 
 /* The sidebar menu */
 .sidebar {
-    height: 100vh; /* 100% Full-height */
+    height: 100vh; /* Full-height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
