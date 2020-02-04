@@ -26,6 +26,22 @@
     z-index: 100; /* always puts the button on top */
 }
 
+/* Facts information */
+.facts {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.facts a {
+    color: #333;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+.facts a:hover {
+    text-decoration: underline;
+}
+
 /* changes stats on the overlay */
 #statistikk-btns {
     display: grid;

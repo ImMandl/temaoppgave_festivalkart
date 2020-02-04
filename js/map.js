@@ -20,6 +20,7 @@ buttons.onclick = (evt) => {
 // Add zoom and rotation controls to the map.
 map.addControl(new mapboxgl.NavigationControl());
 
+// ---- PINS -----
 // TG pin
 const tgPin = (e) => {
     const tg = document.createElement("a");

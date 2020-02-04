@@ -42,7 +42,7 @@ const deltager = document.querySelector("#deltager-btn");
 // Changes statistics to internet statistics
 internett.onclick = () => {
     chart.title.update(
-        { text: 'Internett hastighet gjennom årene' }
+        { text: 'Internett hastighet gjennom årene (Gikk fra Mbit/s til Gbit/s i 2003)' }
     )
     chart.yAxis[0].update(
         {
@@ -55,7 +55,7 @@ internett.onclick = () => {
     )
     chart.series[0].update(
         {
-            name: 'Hastighet på nettet (Gikk fra Mbit/s til Gbit/s i 2003',
+            name: 'Hastighet på nettet',
             data: [0, 0, 0, 0, 2, 2, 6, 35, 35, 50, 155, 1, 1, 1, 1.5, 2, 3, 5, 30, 100, 200, 30, 30, 30, 40, 40, 40, 40]
         }
     )
