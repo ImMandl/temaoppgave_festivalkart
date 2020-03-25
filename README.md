@@ -1,6 +1,9 @@
 # Festivalkart for The Gathering 
 En enkel side som viser et kart over Hamar og steder du kan trenge å besøke under The Gathering i tillegg til annen informasjon som kan være nyttig eller morsom.
 
+## Demo
+ <a href='https://immandl.github.io/temaoppgave_festivalkart/'>Demo av siden på github pages</a>
+
 ## Prosjekt struktur
 Javascript filer brukes for å bruke APIene og hente ut informasjonen for så å legge alt ut på index.html
 Denne siden...
