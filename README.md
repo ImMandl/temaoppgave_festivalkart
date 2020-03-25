@@ -5,7 +5,6 @@ En enkel side som viser et kart over Hamar og steder du kan trenge å besøke un
  <a href='https://immandl.github.io/temaoppgave_festivalkart/'>Demo av siden på github pages</a>
 
 ## Prosjekt struktur
-Javascript filer brukes for å bruke APIene og hente ut informasjonen for så å legge alt ut på index.html
 Denne siden...
 - bruker <a href='https://www.mapbox.com/'>mapbox.</a> API for å hente frem et kart. 
 - bruker <a href='https://www.highcharts.com/'>highchart</a> for å vise statistikk for The Gathering gjennom tidene
